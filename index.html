@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <meta name="author" content="常伟">
+        <title>找不同</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            html{
+                height: 100%;
+            }
+            body{
+                margin: 0;
+                overflow: hidden;
+                background-color: #666;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            main{
+                min-width: 900px;
+                width: 900px;
+                height: 565px;
+                cursor: pointer;
+                position: relative;
+            }
+            main img{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            @keyframes s{
+                0%{
+                    transform: scale(1)
+                }
+                50%{
+                    transform: scale(1.2)
+                }
+                80%{
+                    transform: scale(0.8)
+                }
+                100%{
+                    transform: scale(1)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main></main>
+        <audio src="mp3/a.mp3" loop></audio>
+        <audio src="mp3/click.mp3"></audio>
+        <audio src="mp3/pass.mp3"></audio>
+        <audio src="mp3/complete.mp3"></audio>
+        <audio src="mp3/timeout.mp3"></audio>
+        <script src="jquery/jquery.js"></script>
+        <script src="jquery/jquery.fullscreen.js"></script>
+
+        <script src="js/FullScreen.js"></script>
+
+        <script src="js/Label.js"></script>
+
+        <script src="js/Scene.js"></script>
+
+        <script src="js/GameScene.js"></script>
+
+        <script src="js/StartScene.js"></script>
+
+        <script src="js/Differences.js"></script>         
+
+        <script src="js/SecondManager.js"></script>  
+
+        <script src="js/TimeoutScene.js"></script>
+
+        <script src="js/CompleteScene.js"></script>
+        
+        <script src="js/Audio.js"></script>
+
+        <script src="js/Game.js"></script>
+        
+        <script src="js/GameSceneDatas.js"></script>
+        
+        <script>
+            new Game('main')
+        </script>
+    </body>
+</html>
